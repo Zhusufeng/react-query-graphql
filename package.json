@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "codegen": "graphql-codegen --config codegen.ts"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.29.2",
@@ -17,12 +18,16 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "5.0.2",
+    "@graphql-codegen/client-preset": "4.2.5",
+    "@parcel/watcher": "^2.4.1",
     "@tanstack/eslint-plugin-query": "^5.28.11",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.1",
-    "typescript": "^5"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
   }
 }
